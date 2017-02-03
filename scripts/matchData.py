@@ -3,7 +3,7 @@ __author__ = 'Haohan Wang'
 import numpy as np
 
 def loadPhenotypes():
-    text = [line.strip() for line in open('../data/PHENOTYPES/CombinedPhenotypes.txt')]
+    text = [line.strip() for line in open('../data/PHENOTYPES/RESIDUALS/combinePheno.txt')]
     f = open('../final/phenoIDs.txt', 'w')
     for line in text[0].split()[1:]:
         f.writelines(line+'\n')
