@@ -19,7 +19,8 @@ def cleanPhenotype():
                 data[i,j] = float(phenos[i][j])
             else:
                 NAidx.append(i)
-        m = np.mean(value)
+        # m = np.mean(value)
+        m = np.nan
         for i in NAidx:
             data[i,j] = m
 
